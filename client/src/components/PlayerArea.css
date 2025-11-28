@@ -1,0 +1,685 @@
+.player-area {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Health Tracker - Top Row */
+.health-tracker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c4a6f 100%);
+  border-radius: 0.75rem 0.75rem 0 0;
+  border: 2px solid #4a5f7f;
+  border-bottom: none;
+}
+
+.health-icon {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.health-number {
+  min-width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.health-number.active {
+  background: #dc2626;
+  color: white;
+}
+
+.health-number.inactive {
+  background: #1e293b;
+  color: #64748b;
+  opacity: 0.5;
+}
+
+/* Main Playmat */
+.playmat {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c4a6f 50%, #1e3a5f 100%);
+  border: 2px solid #4a5f7f;
+  border-radius: 0 0 0.75rem 0.75rem;
+  position: relative;
+}
+
+/* Left Section - Character & Momentum */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 140px;
+}
+
+.character-slot {
+  position: relative;
+}
+
+.character-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform-origin: center;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 0.1em;
+}
+
+.character-card {
+  width: 100px;
+  height: 140px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.character-name {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.character-stats {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+.momentum-area {
+  position: relative;
+  margin-left: 20px;
+}
+
+.momentum-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform-origin: center;
+  transform: translateY(-50%) rotate(180deg);
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 0.1em;
+}
+
+.momentum-cards {
+  width: 100px;
+  height: 140px;
+  background: #0f172a;
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.momentum-card {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  border: 1px solid #15803d;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  left: 10px;
+}
+
+.momentum-empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #475569;
+}
+
+/* Center Section - Foundations & Stage */
+.center-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.foundations-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.foundation-slot {
+  flex: 1;
+  position: relative;
+}
+
+.progressive-diff {
+  position: absolute;
+  top: -10px;
+  right: 4px;
+  background: #f97316;
+  color: white;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 4px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  z-index: 20;
+  border: 2px solid #1e3a5f;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.foundation-card, .foundation-placeholder {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 0.5rem;
+}
+
+.foundation-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.foundation-card:hover {
+  transform: translateY(-4px);
+}
+
+.foundation-card.committed {
+  opacity: 0.4;
+  background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+}
+
+.foundation-placeholder {
+  background: rgba(15, 23, 42, 0.5);
+  border-style: dashed;
+}
+
+.card-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 0.25rem;
+}
+
+.card-control {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+.card-pool-label, .stage-label {
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-pool-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-pool-row {
+  display: flex;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.pool-card.condensed,
+.card-pool-placeholder.condensed {
+  flex: 0 0 45px;
+  width: 45px;
+  margin-right: -30px;
+  transition: all 0.3s ease;
+}
+
+.pool-card.condensed:hover,
+.pool-card.condensed.drag-over {
+  transform: translateY(-12px) scale(1.1);
+  z-index: 10;
+}
+
+.card-pool-placeholder.condensed:hover,
+.card-pool-placeholder.condensed.drag-over {
+  z-index: 10;
+  transform: translateY(-8px);
+}
+
+.pool-card {
+  flex: 0 0 140px;
+  width: 140px;
+  position: relative;
+  height: 196px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: grab;
+  transition: all 0.2s;
+  overflow: visible;
+  user-select: none;
+  -webkit-user-drag: element;
+}
+
+.pool-card:active {
+  cursor: grabbing;
+}
+
+.pool-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
+}
+
+.pool-card.drag-over {
+  border-color: #22c55e;
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.pool-card .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.pool-card.committed {
+  opacity: 0.4;
+  background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+}
+
+.card-pool-placeholder {
+  flex: 0 0 140px;
+  width: 140px;
+  position: relative;
+  height: 196px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 2px dashed #475569;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  overflow: visible;
+}
+
+.card-pool-placeholder:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
+}
+
+.card-pool-placeholder.drag-over {
+  background: rgba(34, 197, 94, 0.3);
+  border-color: #22c55e;
+  border-style: solid;
+}
+
+.check-info-area {
+  margin-bottom: 1rem;
+}
+
+.stage-area {
+  flex: 1;
+  background: rgba(15, 23, 42, 0.5);
+  border: 2px dashed #475569;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 150px;
+}
+
+.staging-cards {
+  position: absolute;
+  inset: 0;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.staged-card {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Right Section - Discard & Card Pool */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 100px;
+}
+
+.discard-pile, .card-pool, .deck-pile, .removed-pile {
+  position: relative;
+}
+
+.pile-label {
+  writing-mode: vertical-rl;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 0.1em;
+}
+
+.pile-stack {
+  width: 80px;
+  height: 110px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.pile-card, .pile-placeholder {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pile-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.pile-placeholder {
+  background: rgba(15, 23, 42, 0.3);
+  border-style: dashed;
+}
+
+.pile-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.25rem;
+}
+
+.pile-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b82f6;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.pile-count-badge {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: 2px solid #1e3a5f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.deck-pile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.deck-pile .pile-card.deck {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c4a6f 100%);
+}
+
+.deck-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.mill-controls {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.mill-input {
+  width: 40px;
+  padding: 0.25rem;
+  background: #0f172a;
+  border: 2px solid #475569;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mill-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.mill-button {
+  flex: 1;
+  padding: 0.375rem 0.5rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border: 2px solid #f59e0b;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mill-button:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(245, 158, 11, 0.4);
+}
+
+.mill-button:active {
+  transform: translateY(0);
+}
+
+.check-button {
+  padding: 0.375rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: 2px solid #1e40af;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.check-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.4);
+}
+
+.check-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.check-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.removed-pile .pile-stack.removed .pile-card {
+  background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 100%);
+  border-color: #991b1b;
+}
+
+.removed-pile .pile-count {
+  color: #dc2626;
+}
+
+/* Hand Area */
+.hand-area {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+}
+
+.hand-label {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.hand-cards {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hand-card {
+  width: 100px;
+  height: 140px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: grab;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: element;
+}
+
+.hand-card:active {
+  cursor: grabbing;
+  opacity: 0.7;
+}
+
+.hand-card.dragging {
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+
+.pool-card.dragging {
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+
+.hand-card:hover {
+  transform: translateY(-8px);
+  border-color: #3b82f6;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+.hand-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.25rem;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hand-card-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.hand-card-stats {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Opponent styling */
+.player-area.opponent {
+  transform: rotate(180deg);
+}
+
+.player-area.opponent .hand-area,
+.player-area.opponent .character-card,
+.player-area.opponent .foundation-card,
+.player-area.opponent .hand-card {
+  transform: rotate(180deg);
+}

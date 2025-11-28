@@ -1,0 +1,17 @@
+.game-board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.center-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

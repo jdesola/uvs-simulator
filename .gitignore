@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+
+# Scraped data (optional - remove these lines if you want to commit scraped data)
+data/cards/
+
+# Puppeteer Chrome download
+.cache/
