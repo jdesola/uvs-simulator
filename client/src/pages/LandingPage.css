@@ -14,7 +14,67 @@
 .landing-container h1 {
   color: white;
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.login-section {
+  margin-bottom: 2rem;
+}
+
+.login-button-main {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  min-width: 350px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button-main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.login-button-main h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.login-button-main p {
+  margin: 0;
+  color: #666;
+}
+
+.divider {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 1rem;
+  max-width: 150px;
+}
+
+.divider span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .game-mode-selection {

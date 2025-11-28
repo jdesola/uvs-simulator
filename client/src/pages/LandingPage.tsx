@@ -1,38 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
 
-  const handlePlayVsCPU = () => {
-    navigate('/roll?mode=cpu');
-  };
-
-  const handlePlayVsPlayer = () => {
-    navigate('/roll?mode=player');
-  };
+  useEffect(() => {
+    // Redirect to login on mount
+    navigate('/login');
+  }, [navigate]);
 
   return (
     <div className="landing-page">
       <div className="landing-container">
         <h1>UVS Simulator</h1>
-        <div className="game-mode-selection">
-          <button 
-            className="mode-button cpu-mode"
-            onClick={handlePlayVsCPU}
-          >
-            <h2>Play vs CPU</h2>
-            <p>Practice against an AI opponent</p>
-          </button>
-          <button 
-            className="mode-button player-mode"
-            onClick={handlePlayVsPlayer}
-          >
-            <h2>Play vs Player</h2>
-            <p>Challenge another player online</p>
-          </button>
-        </div>
+        <p className="subtitle">Loading...</p>
       </div>
     </div>
   );
