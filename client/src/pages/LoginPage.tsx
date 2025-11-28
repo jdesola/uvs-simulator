@@ -22,8 +22,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
       const success = await onLogin(email, password);
       
       if (success) {
-        // Navigate to deck selection page
-        navigate('/select-deck');
+        // Navigate to mode selection page
+        navigate('/select-mode');
       } else {
         setError('Invalid email or password. Please try again.');
       }

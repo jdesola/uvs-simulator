@@ -10,19 +10,30 @@
 }
 
 .deck-selection-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
 }
 
 .deck-selection-header h1 {
   color: white;
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 2.5rem;
 }
 
-.back-button {
+.mode-indicator {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.back-button,
+.refresh-button {
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.2);
   color: white;
@@ -33,9 +44,47 @@
   transition: all 0.2s;
 }
 
-.back-button:hover {
+.back-button:hover,
+.refresh-button:hover:not(:disabled) {
   background: white;
   color: #667eea;
+}
+
+.refresh-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cache-info {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.deck-search {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  transition: all 0.2s;
+}
+
+.deck-search:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.deck-search::placeholder {
+  color: #999;
 }
 
 .loading-container {
@@ -232,4 +281,64 @@
 
 .no-decks a:hover {
   text-decoration: underline;
+}
+
+.decks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.deck-list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.deck-list-item:hover:not(.invalid) {
+  background: #e9ecef;
+  border-color: #667eea;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.deck-list-item.invalid {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deck-list-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.deck-list-info h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deck-list-item .deck-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.invalid-indicator {
+  padding: 6px 12px;
+  background: #f8d7da;
+  color: #721c24;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex-shrink: 0;
 }

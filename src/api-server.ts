@@ -62,7 +62,7 @@ app.post('/api/auth/login', async (req: Request, res: Response) => {
 
 /**
  * GET /api/decks
- * Get user's deck list
+ * Get user's deck list (all decks including those in folders)
  */
 app.get('/api/decks', async (req: Request, res: Response) => {
   try {
@@ -78,8 +78,8 @@ app.get('/api/decks', async (req: Request, res: Response) => {
       return res.status(401).json({ error: 'Not authenticated' });
     }
 
-    const orderBy = (req.query.orderBy as any) || 'date_created';
-    const decks = await auth.getUserDecks(orderBy);
+    // Get all decks recursively from all folders
+    const decks = await auth.getAllDecksRecursive();
     
     res.json(decks);
   } catch (error) {
@@ -139,6 +139,34 @@ app.get('/api/folders/:folderId/decks', async (req: Request, res: Response) => {
     res.json(decks);
   } catch (error) {
     console.error('Get folder decks error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+/**
+ * GET /api/folders/:folderId/subfolders
+ * Get subfolders within a specific folder
+ */
+app.get('/api/folders/:folderId/subfolders', async (req: Request, res: Response) => {
+  try {
+    const sessionId = req.headers['x-session-id'] as string;
+    const { folderId } = req.params;
+    
+    if (!sessionId) {
+      return res.status(401).json({ error: 'Not authenticated' });
+    }
+
+    const auth = getAuthInstance(sessionId);
+    
+    if (!auth.isLoggedIn()) {
+      return res.status(401).json({ error: 'Not authenticated' });
+    }
+
+    const subfolders = await auth.getSubfolders(folderId);
+    
+    res.json(subfolders);
+  } catch (error) {
+    console.error('Get subfolders error:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });

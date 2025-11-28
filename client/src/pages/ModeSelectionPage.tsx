@@ -10,11 +10,11 @@ export const ModeSelectionPage: React.FC<ModeSelectionPageProps> = ({ hasSelecte
   const navigate = useNavigate();
 
   const handlePlayVsCPU = () => {
-    navigate('/roll?mode=cpu');
+    navigate('/select-deck?mode=cpu');
   };
 
   const handlePlayVsPlayer = () => {
-    navigate('/roll?mode=player');
+    navigate('/select-deck?mode=player');
   };
 
   return (
@@ -50,9 +50,9 @@ export const ModeSelectionPage: React.FC<ModeSelectionPageProps> = ({ hasSelecte
         <div className="mode-selection-footer">
           <button 
             className="back-button"
-            onClick={() => navigate('/select-deck')}
+            onClick={() => navigate('/')}
           >
-            ← Change Deck
+            ← Back to Home
           </button>
         </div>
       </div>

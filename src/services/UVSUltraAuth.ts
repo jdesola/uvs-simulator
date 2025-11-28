@@ -156,10 +156,77 @@ export class UVSUltraAuth {
         },
       });
 
-      return this.parseDecksFromHTML(response.data);
+      const decks = this.parseDecksFromHTML(response.data);
+      console.log(`Folder ${folderId}: Found ${decks.length} decks`);
+      return decks;
     } catch (error) {
       console.error(`Failed to get decks in folder ${folderId}:`, error);
       return [];
+    }
+  }
+
+  /**
+   * Get subfolders within a specific folder
+   */
+  async getSubfolders(folderId: string): Promise<FolderItem[]> {
+    try {
+      const response = await this.axiosInstance.get('/menu_list_user_deck.php', {
+        params: {
+          mdfolderid: folderId,
+          js: '',
+        },
+        headers: {
+          'Cookie': this.getCookieString(),
+          'X-Requested-With': 'XMLHttpRequest',
+        },
+      });
+
+      const subfolders = this.parseFoldersFromHTML(response.data);
+      console.log(`Folder ${folderId}: Found ${subfolders.length} subfolders`);
+      return subfolders;
+    } catch (error) {
+      console.error(`Failed to get subfolders in folder ${folderId}:`, error);
+      return [];
+    }
+  }
+
+  /**
+   * Get all decks including those in folders recursively
+   */
+  async getAllDecksRecursive(): Promise<DeckListItem[]> {
+    try {
+      // Get root level decks
+      const rootDecks = await this.getUserDecks();
+      
+      // Get all folders
+      const folders = await this.getUserFolders();
+      
+      // Recursively get decks from all folders
+      const allDecks = [...rootDecks];
+      await this.collectDecksFromFolders(folders, allDecks);
+      
+      console.log(`Total decks collected: ${allDecks.length}`);
+      return allDecks;
+    } catch (error) {
+      console.error('Failed to get all decks recursively:', error);
+      return [];
+    }
+  }
+
+  /**
+   * Recursively collect decks from folders and subfolders
+   */
+  private async collectDecksFromFolders(folders: FolderItem[], allDecks: DeckListItem[]): Promise<void> {
+    for (const folder of folders) {
+      // Get decks in this folder
+      const folderDecks = await this.getDecksInFolder(folder.id);
+      allDecks.push(...folderDecks);
+      
+      // Get subfolders and recurse
+      const subfolders = await this.getSubfolders(folder.id);
+      if (subfolders.length > 0) {
+        await this.collectDecksFromFolders(subfolders, allDecks);
+      }
     }
   }
 
@@ -191,13 +258,25 @@ export class UVSUltraAuth {
     const $ = cheerio.load(html);
     const decks: DeckListItem[] = [];
 
-    $('#list-mydeck-all .avatar-deck').each((_, element) => {
+    const deckElements = $('#list-mydeck-all .avatar-deck');
+    console.log(`Parsing HTML: Found ${deckElements.length} deck elements`);
+
+    deckElements.each((_, element) => {
       const $deck = $(element);
-      const $link = $deck.find('a[href^="deck.php"]').first();
-      const deckUrl = $link.attr('href') || '';
+      
+      // Find the deck link in the info section (has the deck name)
+      const $infoSpan = $deck.find('.avatar-deck-info span').first();
+      const $deckLink = $infoSpan.find('a[href^="deck.php"]');
+      const deckUrl = $deckLink.attr('href') || '';
       const deckId = deckUrl.match(/deck=([^&]+)/)?.[1] || '';
       
-      const name = $link.text().trim();
+      // Get deck name - it's either text in the link, or in an img alt attribute
+      let name = $deckLink.clone().children().remove().end().text().trim();
+      if (!name) {
+        const $nameImg = $deckLink.find('img').first();
+        name = $nameImg.attr('alt') || $nameImg.attr('title') || '';
+      }
+      
       const $img = $deck.find('img.ci-small_image');
       const characterImage = $img.attr('src');
       
@@ -211,6 +290,7 @@ export class UVSUltraAuth {
       const isValid = $formatBadge.hasClass('label-success');
 
       if (deckId && name) {
+        console.log(`Found deck: ${name} (${deckId})`);
         decks.push({
           id: deckId,
           name,
@@ -219,9 +299,12 @@ export class UVSUltraAuth {
           isValid,
           characterImage,
         });
+      } else {
+        console.log(`Skipped element - deckId: ${deckId}, name: ${name}`);
       }
     });
 
+    console.log(`Total decks parsed: ${decks.length}`);
     return decks;
   }
 
@@ -319,7 +402,7 @@ export class UVSUltraAuth {
   /**
    * Parse individual card data from HTML element
    */
-  private parseCardFromElement($: cheerio.CheerioAPI, $el: cheerio.Cheerio): any {
+  private parseCardFromElement($: cheerio.CheerioAPI, $el: cheerio.Cheerio<any>): any {
     const cardName = $el.text().split('x')[0].trim();
     const quantityText = $el.find('.badge-success').text();
     const quantityMatch = quantityText.match(/x(\d+)/);
