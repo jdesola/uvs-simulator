@@ -1,0 +1,305 @@
+.check-panel-overlay {
+  width: 100%;
+  margin: 0;
+}
+
+.check-panel {
+  background: linear-gradient(180deg, #1a2332 0%, #0f1419 100%);
+  border: 3px solid #3b82f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.check-panel-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 2px solid #2563eb;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+}
+
+.check-panel-header h2 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.check-panel-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.check-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.check-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 0.8125rem;
+  color: #3b82f6;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.check-card-display {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.check-card-display img {
+  width: 60px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.check-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.check-card-name {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.check-difficulty,
+.check-value {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+}
+
+.check-difficulty-value,
+.check-value-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-left: 4px;
+}
+
+.check-calculation {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+}
+
+.check-math {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.check-math-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.check-math-label {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.check-math-value {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.check-math-total {
+  border: 2px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.15);
+  margin-top: 8px;
+}
+
+.check-math-total .check-math-value {
+  font-size: 1.5rem;
+  color: #3b82f6;
+}
+
+.check-math-required {
+  border: 2px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.check-math-required .check-math-value {
+  color: #f59e0b;
+}
+
+.check-result {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 8px;
+}
+
+.check-passed {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: 2px solid #34d399;
+  color: #ffffff;
+}
+
+.check-failed {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border: 2px solid #f87171;
+  color: #ffffff;
+}
+
+.check-commitment {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.check-commitment-text {
+  color: #cbd5e1;
+  margin: 0 0 12px 0;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.check-commitment-text strong {
+  color: #f59e0b;
+  font-size: 1rem;
+}
+
+.check-commitment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+.check-commitment-info div {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.check-failed-section {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.check-commitment-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.check-commitment-btn {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.check-commitment-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.check-commitment-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.check-commitment-count {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #f59e0b;
+  min-width: 60px;
+  text-align: center;
+}
+
+.check-panel-actions {
+  padding: 12px 16px;
+  border-top: 2px solid rgba(59, 130, 246, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.check-action-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.check-action-cancel {
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  border-color: #94a3b8;
+  color: #ffffff;
+}
+
+.check-action-cancel:hover {
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.check-action-reveal {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-color: #60a5fa;
+  color: #ffffff;
+}
+
+.check-action-reveal:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.6);
+}
+
+.check-action-accept {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-color: #34d399;
+  color: #ffffff;
+  flex: 1;
+  max-width: 400px;
+}
+
+.check-action-accept:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.6);
+}

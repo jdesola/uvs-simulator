@@ -1,0 +1,1197 @@
+[
+  {
+    "id": "backup-grinding-overtime",
+    "name": "Grinding Overtime",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "all",
+      "death",
+      "life",
+      "all",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response",
+      "Form",
+      "Breaker"
+    ],
+    "cardText": "Breaker: 1 - XP                        Enhance [Your turn]: Level up. Only 1 copy of this ability can be played this turn.\n\nResponse: After this card is removed from your hand, build it transformed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/sleb/005-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": true
+  },
+  {
+    "id": "backup-bear-bite",
+    "name": "Bear Bite",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 5,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "all",
+      "death",
+      "life",
+      "all",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Response",
+      "Throw"
+    ],
+    "cardText": "Shadow - Shift - Throw - XP                        Response: After this attack is not blocked, your rival sacrifices 1 foundation.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/sleb/006-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-chivalrous-charge",
+    "name": "Chivalrous Charge",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 4,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "all",
+      "death",
+      "life",
+      "all",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Weapon"
+    ],
+    "cardText": "Shadow - Charge - Shift - Weapon - XP                        Blitz: This attack gets +3 damage. If your rival has no cards in their hand, they draw 1 card.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/sleb/007-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-rage-riot",
+    "name": "Rage Riot",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 6,
+    "blockZone": "high",
+    "blockModifier": 0,
+    "symbols": [
+      "all",
+      "death",
+      "life",
+      "all",
+      "death",
+      "life"
+    ],
+    "keywords": [
+      "Response",
+      "Form",
+      "Weapon"
+    ],
+    "cardText": "Shadow - Fury - Shift - Weapon - XP                        Response: After this attack deals damage, build it transformed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/sleb/008-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": true
+  },
+  {
+    "id": "backup-shadow-sorcery",
+    "name": "Shadow Sorcery",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 4,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "all",
+      "death",
+      "life",
+      "all",
+      "death",
+      "life"
+    ],
+    "keywords": [],
+    "cardText": "Shadow - Shift - Spell - XP                        Blitz: This attack gets +2 speed for each copy of \"Shadow Mage\" and/or \"Shadow Sorcery\" in your stage or removed pile.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/sleb/009-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-scumbug--inscrutable-insect",
+    "name": "Scumbug, Inscrutable Insect",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_all"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        Enhance: Look at the top card of a player's deck. You may have that player mill 1.\n\nResponse: After this backup is attacked, draw 1 card.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/046-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 6,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-cammy--covert-chameleon",
+    "name": "Cammy, Covert Chameleon",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_earth"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        Enhance Commit: This attack gets +2 speed. Flip 1 rival foundation.\n\nResponse [Tenacious]: After this backup is attacked, check 6. If you pass, flip and commit this card.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/068-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 3,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-genghis-frog--temperamental-toad",
+    "name": "Genghis Frog, Temperamental Toad",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 5,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_fire"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        While this card is in your stage, your attacks get +3 damage.\n\nResponse: After this backup is attacked, your rival loses 3 health.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/111-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-mechazoid",
+    "name": "Mechazoid",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "at_void"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Tech                        Your deck may include up to 8 copies of this card.\n\nYour abilities treat this card as an asset in addition to its other types.\n\nEnhance [Your attack] Commit: Your rival commits 1 foundation.\n\nResponse: After this card is destroyed, draw 1 card and discard 1 card.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/153-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-ray-fillet--singing-stingray",
+    "name": "Ray Fillet, Singing Stingray",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_water"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        Enhance [Your turn]: Your rival adds the top card of their deck to their card pool face down.\n\nResponse: After this backup is attacked, your rival adds the top card of their deck to their card pool face down.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/174-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-cynthia-utrom--veiled-villain",
+    "name": "Cynthia Utrom, Veiled Villain",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 5,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_evil",
+      "at_void"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        Enhance [Your turn] Commit: Your rival discards 1 card.\n\nResponse [Tenacious]: After this backup is attacked, your rival removes the top 2 cards of their deck.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/185-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-mondo-gecko--righteous-reptile",
+    "name": "Mondo Gecko, Righteous Reptile",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "mid",
+    "blockModifier": 0,
+    "symbols": [
+      "at_air",
+      "at_good"
+    ],
+    "keywords": [
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Ally - Elusive - Unique                        Enhance: This attack gets +X or -X speed. X equals its printed block modifier.\n\nResponse: After this backup is attacked, your rival commits 1 foundation.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/186-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-splinter",
+    "name": "Splinter",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "at_good"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Mutant - Unique                        Response Remove: After your rival plays an attack, if your character is a Mutant, add that attack to your rival's momentum face down.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/tmnt01/259-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 3,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-falco-s-jaw-titan-attacks-",
+    "name": "Falco's Jaw Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 6,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "attackhigh",
+      "at_air",
+      "attackhigh",
+      "at_air"
+    ],
+    "keywords": [],
+    "cardText": "Shift - Titan                        Blitz: Your next attack this turn gets +4 speed, and you may change its zone to .\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/023-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-kiyomi-azumabito",
+    "name": "Kiyomi Azumabito",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "at_air"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Ally - Unique                        Response: After you clear 1 or more cards during the Combat Phase, draw 1 card or ready 1 foundation that has not been readied this Combat Phase. If this is the second time or greater you have played this ability this turn, commit this card.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/030-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-theo-magath",
+    "name": "Theo Magath",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "at_chaos"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Ally - Unique                        Response: After you spend 1 or more momentum, this attack gets +2 or -2 damage.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/056-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-war-hammer-titan-attacks-",
+    "name": "War Hammer Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 7,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "at_death",
+      "at_death"
+    ],
+    "keywords": [
+      "Stun",
+      "Response",
+      "Form"
+    ],
+    "cardText": "Shift - Stun: 1 - Titan                        Response Sacrifice 1 foundation: After this attack resolves, you may build this card transformed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/081-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": true
+  },
+  {
+    "id": "backup-willy-tybur",
+    "name": "Willy Tybur",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "at_death"
+    ],
+    "keywords": [
+      "E Commit",
+      "Response"
+    ],
+    "cardText": "Ally - Unique                        When sacrificing foundations to pay a cost, you may sacrifice this card as though it were a foundation.\n\nResponse Commit: After you sacrifice 1 or more foundations, if the number of foundations in your stage is equal to or less than the number of foundations in your rival's stage, build the top card of your deck face down committed.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/082-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-the-founding-titan-s-power",
+    "name": "The Founding Titan's Power",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 8,
+    "blockZone": "mid",
+    "blockModifier": 1,
+    "symbols": [
+      "at_fire",
+      "at_fire"
+    ],
+    "keywords": [
+      "Stun"
+    ],
+    "cardText": "Shift - Stun: 3 - Titan                        Blitz: Draw 1 card, add the top card of your deck to your momentum, and gain 3 health.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/104-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-hitch-dreyse",
+    "name": "Hitch Dreyse",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "at_fire"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Unique                        Enhance Commit: This attack gets +X or -X damage. X equals the number of backups in your stage (max. 5).\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/109-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-onyankopon",
+    "name": "Onyankopon",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "at_life"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance",
+      "Progressive"
+    ],
+    "cardText": "Ally - Unique                        First Enhance Commit: Choose 1 card in your card pool. It does not count toward progressive difficulty this turn. You cannot play abilities on cards named \"Onyankopon\" this turn.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/136-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-yelena",
+    "name": "Yelena",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "at_order"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Unique                        Enhance Commit: Look at the top 3 cards of your deck. Build 1 of them face down and discard the rest.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/163-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-the-nine-titans-from-throughout-the-ages",
+    "name": "The Nine Titans from throughout the Ages",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 3,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Titan                        First Enhance Commit, Lose 3 stamina: Double this Titan attack's speed or damage.\n\nResponse Commit, Lose 2 stamina: After an attack is played, it gets -4 damage.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/182-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 6,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-yeagerist-follower",
+    "name": "Yeagerist Follower",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 1,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally                        You can include up to 10 copies of this card in your deck.\n\nEnhance Commit: Look at the top card of your deck. You may mill 1.\n\nEnhance Commit: This attack gets -1 speed for every 2 copies of \"Yeagerist Follower\" in your stage (min. 1).\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/183-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 1,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-marleyan-soldiers",
+    "name": "Marleyan Soldiers",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "high",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally                        You can include up to 10 copies of this card in your deck.\n\nEnhance Commit: This attack gets +1 damage for each copy of \"Marleyan Soldiers\" in your stage.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot03/187-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 2,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-jarett-howarth",
+    "name": "Jarett Howarth",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 4,
+    "blockZone": "high",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "Response",
+      "Weapon"
+    ],
+    "cardText": "Ally - Party - Warrior - Unique                        While this card is in your stage, your character is a Warrior.\n\nResponse Add this card to your card pool: After your Weapon attack is blocked, add it to your hand.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/168-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-keg",
+    "name": "Keg",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "high",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Response"
+    ],
+    "cardText": "Ally - Champion - Party - Unique                        While this card is in your stage, your character is a Champion.\n\nResponse Commit: After a player chooses to attack another backup, they attack this backup instead.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/169-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-reani",
+    "name": "Reani",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Party - Warden - Unique                        While this card is in your stage, your character is a Warden.\n\nFirst Enhance Commit, Flip 1 foundation: Unflip 1 foundation.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/170-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-shakaste",
+    "name": "Shakaste",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Healer - Party - Unique                        While this card is in your stage, your character is a Healer.\n\nEnhance Commit: Gain 2 health.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/171-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-shaun-gilmore",
+    "name": "Shaun Gilmore",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Mage - Party - Unique                        While this card is in your stage, your character is a Mage.\n\nEnhance Commit: Your next check gets +2.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/172-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-spireling-fetch",
+    "name": "Spireling Fetch",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 3,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Ally - Party - Thief - Unique                        While this card is in your stage, your character is a Thief.\n\nEnhance Commit: This attack gets +2 speed. Remove the top card of your rival's deck.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/cr02/173-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-little-mister",
+    "name": "Little Mister",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 1,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "at_fire"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Ally - Unique                        While this card is in your stage, if you would mill 1 or more cards, mill that many cards plus 1 instead.\n\nResponse Lose 1 stamina: After you spend momentum to pay for a keyword ability, increase the effect of that ability as though you spent 1 additional momentum.\n",
+    "unique": true,
+    "imageUrl": "https://uvsultra.online/images/extensions/promo2025/051-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 3,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-massive-abnormal-titan",
+    "name": "Massive Abnormal Titan",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "at_chaos"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Commit, Lose 1 stamina: Mill 1. If the card milled this way is a non-attack card, add it to your hand.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/055-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 5,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-titan-in-the-woods",
+    "name": "Titan in the Woods",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "at_death"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Commit, Lose 1 stamina: Ruin 1.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/083-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 2,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-grisha-s-attack-titan",
+    "name": "Grisha's Attack Titan",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 2,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "at_fire"
+    ],
+    "keywords": [
+      "Form"
+    ],
+    "cardText": "Titan                        Form Sacrifice: Add 1 Fury attack from your discard pile to your hand.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/108-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 6,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": true
+  },
+  {
+    "id": "backup-beast-titan-attacks-",
+    "name": "Beast Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 7,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "at_life",
+      "at_life"
+    ],
+    "keywords": [
+      "Ranged",
+      "Throw"
+    ],
+    "cardText": "Ranged - Shift - Titan                        Blitz Sacrifice 1 asset or backup: This attack gains Throw.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/121-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-titans-under-orders",
+    "name": "Titans under Orders",
+    "cardType": "backup",
+    "control": 6,
+    "difficulty": 3,
+    "blockZone": "mid",
+    "blockModifier": 2,
+    "symbols": [
+      "at_life"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Commit: This attack gets -3 damage. This backup loses 3 stamina.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/133-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 6,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-cart-titan-attacks-",
+    "name": "Cart Titan Attacks!",
+    "cardType": "backup",
+    "control": 3,
+    "difficulty": 5,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "at_order",
+      "at_order"
+    ],
+    "keywords": [
+      "Response"
+    ],
+    "cardText": "Shift - Titan                        Response: After this attack deals damage, your rival readies 1 of your foundations.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/147-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": false
+  },
+  {
+    "id": "backup-rank-of-titans",
+    "name": "Rank of Titans",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 1,
+    "blockZone": "low",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Lose 1 stamina, Commit: Your attack gets +2 damage.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/180-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 3,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-two-to-three-meter-class-titans",
+    "name": "Two-to-Three-Meter-Class Titans",
+    "cardType": "backup",
+    "control": 5,
+    "difficulty": 1,
+    "blockZone": "high",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Commit, Lose 1 stamina: Your attack gets +2 speed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot02/181-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 3,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-a-titan--large--attacks-",
+    "name": "A Titan (Large) Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 6,
+    "blockZone": "mid",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [
+      "Powerful"
+    ],
+    "cardText": "Powerful: 3 - Shift - Titan\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/283-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-armored-titan-attacks-",
+    "name": "Armored Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 8,
+    "blockZone": "mid",
+    "blockModifier": 4,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [
+      "Response",
+      "Form"
+    ],
+    "cardText": "Shift - Titan                        Blitz: Your rival flips 1 foundation.\n\nResponse: After you block with this card, build it transformed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/284-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": true,
+    "isForm": true
+  },
+  {
+    "id": "backup-attack-titan-attacks-",
+    "name": "Attack Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 8,
+    "blockZone": "high",
+    "blockModifier": 2,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [],
+    "cardText": "Fury - Shift - Titan                        Deadlock Blitz: Ruin 1.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/285-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-colossus-titan-attacks-",
+    "name": "Colossus Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 10,
+    "blockZone": "mid",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [
+      "Throw"
+    ],
+    "cardText": "Shift - Throw - Titan                        Blitz: Add the top 2 cards of your deck to your momentum.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/286-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-female-titan-attacks-",
+    "name": "Female Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 7,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [],
+    "cardText": "Shift - Titan                        Blitz: Draw 1 card. Ready 1 backup.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/288-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-jaw-titan-attacks-",
+    "name": "Jaw Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 6,
+    "blockZone": "low",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [],
+    "cardText": "Shift - Titan                        Blitz: Gain 2 health.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/290-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-smiling-titan-attacks-",
+    "name": "Smiling Titan Attacks!",
+    "cardType": "backup",
+    "control": 4,
+    "difficulty": 7,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity",
+      "infinity"
+    ],
+    "keywords": [],
+    "cardText": "Shift - Titan                        Blitz: Your rival spends 1 momentum.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/291-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 0,
+    "isEnhance": false,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-a-titan--medium-",
+    "name": "A Titan (Medium)",
+    "cardType": "backup",
+    "control": 6,
+    "difficulty": 4,
+    "blockZone": "high",
+    "blockModifier": 1,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance"
+    ],
+    "cardText": "Titan                        Enhance Commit, Lose 1 stamina: This attack gets +2 damage. If your rival has 10 or more foundations, this attack gets +2 speed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/294-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 7,
+    "isEnhance": true,
+    "isResponse": false,
+    "isForm": false
+  },
+  {
+    "id": "backup-a-titan--small-",
+    "name": "A Titan (Small)",
+    "cardType": "backup",
+    "control": 6,
+    "difficulty": 4,
+    "blockZone": "mid",
+    "blockModifier": 3,
+    "symbols": [
+      "infinity"
+    ],
+    "keywords": [
+      "E Commit",
+      "Enhance",
+      "Response"
+    ],
+    "cardText": "Titan                        Response: After you block with this card, build it at the end of the Combat Phase.\n\nEnhance Commit, Lose 1 stamina: This attack gets +1 or -1 speed.\n",
+    "unique": false,
+    "imageUrl": "https://uvsultra.online/images/extensions/aot01/295-mini.jpg?20240802",
+    "legalities": [],
+    "stamina": 4,
+    "isEnhance": true,
+    "isResponse": true,
+    "isForm": false
+  }
+]

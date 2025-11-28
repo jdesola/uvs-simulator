@@ -1,0 +1,49 @@
+.turn-info {
+  background: var(--bg-dark);
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.turn-number {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.active-player {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.current-phase {
+  font-size: 1rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.phase-name {
+  font-weight: bold;
+  color: var(--success-color);
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-light);
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.check-panel-container {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(59, 130, 246, 0.3);
+  padding-top: 1rem;
+}
