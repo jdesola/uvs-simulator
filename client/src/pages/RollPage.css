@@ -1,0 +1,334 @@
+.roll-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+}
+
+.roll-container {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.roll-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.roll-instructions {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.roll-instructions strong {
+  color: #667eea;
+  font-weight: bold;
+}
+
+.dice-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.player-roll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.player-roll h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: 3px solid #667eea;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s;
+}
+
+.dice.large {
+  width: 150px;
+  height: 150px;
+  font-size: 5rem;
+}
+
+.dice.rolling {
+  animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.plus-sign {
+  font-size: 2rem;
+  color: #999;
+  font-weight: bold;
+}
+
+.player-goal {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.roll-result {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.sum {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.winner {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.winner.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.roll-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.roll-button,
+.start-button,
+.back-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.roll-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.roll-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.roll-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
+}
+
+.back-button {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.back-button:hover {
+  background: #d0d0d0;
+}
+
+.step-content {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.step-message {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+}
+
+.step-message strong {
+  color: #667eea;
+}
+
+.spinner {
+  font-size: 4rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.instruction {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.preference-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.preference-button {
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 3px solid #667eea;
+  border-radius: 12px;
+  background: white;
+  color: #667eea;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preference-button:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.preference-button.even {
+  border-color: #11998e;
+  color: #11998e;
+}
+
+.preference-button.even:hover {
+  background: #11998e;
+  color: white;
+}
+
+.preference-button.odd {
+  border-color: #764ba2;
+  color: #764ba2;
+}
+
+.preference-button.odd:hover {
+  background: #764ba2;
+  color: white;
+}
+
+.roll-status {
+  font-size: 1.1rem;
+  color: #999;
+  margin: 0;
+}
+
+.result-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.result-text strong {
+  color: #667eea;
+  font-size: 1.3rem;
+}
+
+.winner-announcement {
+  font-size: 1.4rem;
+  color: #11998e;
+  font-weight: bold;
+  margin: 1rem 0;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.winner-announcement.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.starting-choice {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.player-choice-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.choice-button {
+  padding: 1.5rem 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.choice-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.final-choice {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chosen-text {
+  font-size: 1.3rem;
+  color: #11998e;
+  font-weight: bold;
+}

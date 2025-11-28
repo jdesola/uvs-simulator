@@ -6,11 +6,11 @@ const LandingPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handlePlayVsCPU = () => {
-    navigate('/game?mode=cpu');
+    navigate('/roll?mode=cpu');
   };
 
   const handlePlayVsPlayer = () => {
-    navigate('/game?mode=player');
+    navigate('/roll?mode=player');
   };
 
   return (
