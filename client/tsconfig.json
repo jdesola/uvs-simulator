@@ -30,5 +30,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "../src"]
+  "include": ["src", "../src", "../shared/game-logic/GameEngine.ts", "../shared/game-logic/GamePhases.ts", "../shared/models", "../tools/scraper", "../tools/examples/demo.ts", "../tools/examples/example-load-cards.ts"]
 }

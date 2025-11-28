@@ -6,8 +6,8 @@
  *   npm run scrape backup                   - Scrape only backup cards
  */
 
-import { UniversalCardScraper } from '../scraper/UniversalCardScraper';
-import { CardType } from '../scraper/types';
+import { UniversalCardScraper } from './UniversalCardScraper';
+import { CardType } from './types';
 
 async function main() {
   console.log('=== Universus Card Scraper ===');

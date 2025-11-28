@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a digital simulator for the Universus card game (formerly UFS), built with TypeScript, React, and Vite. The project consists of:
+This is a digital simulator for the Universus card game, built with TypeScript, React, and Vite. The project consists of:
 - **Backend Game Engine** (`/src`) - Core game logic and card models
 - **Frontend UI** (`/client`) - React-based interface with drag-and-drop gameplay
 - **Card Scraper** (`/src/scraper`) - Tools to fetch card data from uvsultra.online and TTS mod files
@@ -163,8 +163,8 @@ Cards move between zones (`src/models/Zone.ts`):
 enum Zone {
   DECK = 'deck',
   HAND = 'hand',
-  CARD_POOL = 'cardPool',      // Foundations live here
-  STAGING_AREA = 'stagingArea', // Cards being played this turn
+  CARD_POOL = 'cardPool',      
+  STAGING_AREA = 'stagingArea', 
   DISCARD = 'discard',
   REMOVED = 'removed'
 }

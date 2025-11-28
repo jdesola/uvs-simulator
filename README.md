@@ -16,7 +16,11 @@ src/
 ├── scraper/
 │   ├── types.ts                    # Scraper type definitions
 │   ├── UniversalCardScraper.ts    # Main scraper implementation
-│   └── scrape-all.ts              # Scraping script
+│   ├── CardLoader.ts               # Card data loader and converter
+│   └── scrape-all.ts               # Scraping script
+├── examples/
+│   ├── demo.ts                     # Basic game demo
+│   └── example-load-cards.ts       # Example using scraped cards
 └── index.ts             # Entry point and exports
 ```
 

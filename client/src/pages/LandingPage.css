@@ -1,0 +1,50 @@
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.landing-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.landing-container h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.game-mode-selection {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mode-button {
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  min-width: 250px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mode-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.mode-button p {
+  margin: 0;
+  color: #666;
+}

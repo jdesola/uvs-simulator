@@ -3,9 +3,9 @@
  * Shows basic game setup and turn flow
  */
 
-import { GameEngine } from './game/GameEngine';
-import { CharacterCard, FoundationCard, AttackCard } from './models/Card';
-import { Symbol, CardType } from './models/Card';
+import { GameEngine } from '../game/GameEngine';
+import { CharacterCard, FoundationCard, AttackCard } from '../models/Card';
+import { Symbol, CardType } from '../models/Card';
 
 function main() {
   console.log('╔════════════════════════════════════════╗');

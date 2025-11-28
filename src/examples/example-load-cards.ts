@@ -2,9 +2,9 @@
  * Example: Using scraped card data with the game simulator
  */
 
-import { CardLoader } from './scraper/CardLoader';
-import { GameEngine } from './game/GameEngine';
-import { Format } from './scraper/types';
+import { CardLoader } from '../scraper/CardLoader';
+import { GameEngine } from '../game/GameEngine';
+import { Format } from '../scraper/types';
 
 async function main() {
   console.log('=== Loading Scraped Cards ===\n');
