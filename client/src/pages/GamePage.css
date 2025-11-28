@@ -3,6 +3,17 @@
   flex-direction: column;
   height: 100vh;
   background: #1a1a2e;
+  color: white;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  color: white;
+  background: #1a1a2e;
 }
 
 .game-header {
